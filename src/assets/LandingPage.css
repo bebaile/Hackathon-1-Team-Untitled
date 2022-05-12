@@ -22,4 +22,9 @@
 	top:1px;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
+
     
