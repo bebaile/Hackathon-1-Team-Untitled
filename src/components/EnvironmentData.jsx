@@ -15,7 +15,7 @@ const EnvironmentData = () => {
         setEnvironment(resp);
       });
   }, []);
-  return <div>{environment}</div>;
+  return <div></div>;
 };
 
 export default EnvironmentData;

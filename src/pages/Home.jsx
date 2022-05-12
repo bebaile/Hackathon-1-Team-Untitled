@@ -1,7 +1,8 @@
 import React from "react";
-// import RandomApi from "../components/RandomApi";
+
 import Maps from "../components/Maps";
 import EnvironmentData from "../components/EnvironmentData";
+import "../assets/App.css";
 
 const Home = () => {
   return (
