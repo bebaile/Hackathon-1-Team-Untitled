@@ -1,7 +1,7 @@
 import React from "react";
 
 const EnvironmentData = () => {
-  return <div />;
+  return <div className="EnvironmetData"></div>;
 };
 
 export default EnvironmentData;
