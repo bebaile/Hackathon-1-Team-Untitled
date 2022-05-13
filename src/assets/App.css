@@ -1,6 +1,5 @@
 html {
     background-color: #BFD200;
-
 }
 
 body {
@@ -62,4 +61,53 @@ input {
 }*/
 label {
     color: white;
+}
+
+.Sign-in {
+    box-shadow: 3px 4px 0px 0px #3dc21b;
+    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color: #44c767;
+    border-radius: 18px;
+    border: 1px solid #18ab29;
+    display: flex;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    align-items: center;
+}
+
+.Sign-in:hover {
+    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color: #5cbf2a;
+}
+
+.Sign-in:active {
+    position: relative;
+    top: 1px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+
 }
