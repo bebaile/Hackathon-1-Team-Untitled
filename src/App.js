@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import { MainContextProvider } from "./contexts/MainContext";
 
 const App = () => {
-  const [isOnline, setIsOnline] = useState();
+  const [isOnline, setIsOnline] = useState(false);
   if(!isOnline){
     return <Connexion setIsOnline={setIsOnline}/>
   }

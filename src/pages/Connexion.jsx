@@ -1,6 +1,6 @@
 import React from "react"; 
 
-  const database = [
+ /* const database = [
     {
       username: "Olivier",
       password: "Pochic"
@@ -21,25 +21,34 @@ import React from "react";
       username: "Stephane",
       password: "Feroussier"
     }
-  ];
+  ];*/
+
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+}
+
 
 export default function Login() {
+
   return(
-  <div className="login-wrapper">
-    <h1>Veuillez vous connecter</h1>
-    <form>
-      <label>
-        <p>Nom Utilisateur</p>
-        <input type="text" />
-      </label>
-      <label>
-        <p>Mot de Passe</p>
-        <input type="password" />
-      </label>
-      <div>
-        <button type="submit">Soumettre</button>
-      </div>
-    </form>
-  </div> 
+  <div className="container">
+    <div className="login-wrapper">
+      <h1>Veuillez vous connecter</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          <p className="info">Nom Utilisateur</p>
+          <input type="text" name="" />
+        </label>
+        <label>
+          <p className="info">Mot de Passe</p>
+          <input type="password"/>
+        </label>
+        <div>
+          <button type="submit" onSubmit={handleSubmit}>Soumettre</button>
+        </div>
+      </form>
+    </div>  
+  </div>
   )
 }

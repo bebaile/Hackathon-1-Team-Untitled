@@ -1,0 +1,12 @@
+.container {
+    color: green;   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+};
+
+.login-wrapper {
+    font-size: 40px;
+};
+ 
