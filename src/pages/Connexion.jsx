@@ -38,11 +38,11 @@ export default function Login() {
       <form onSubmit={handleSubmit}>
         <label>
           <p className="info">Nom Utilisateur</p>
-          <input type="text" name="" />
+          <input className="input" type="text" name="" />
         </label>
         <label>
           <p className="info">Mot de Passe</p>
-          <input type="password"/>
+          <input className="input"  type="password"/>
         </label>
         <div>
           <button type="submit" onSubmit={handleSubmit}>Soumettre</button>
