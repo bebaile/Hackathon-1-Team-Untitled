@@ -4,6 +4,7 @@ import Connexion from "./pages/Connexion";
 import LandingPage from "./pages/LandingPage";
 import { Routes, Route } from "react-router-dom";
 import { MainContextProvider } from "./contexts/MainContext";
+import RandomApi from "./components/RandomApi";
 
 const App = () => {
   //const [isOnline, setIsOnline] = useState(false);
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/connexion" element={<Connexion />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/random" element={<RandomApi />} />
         </Routes>
       </MainContextProvider>
     </>

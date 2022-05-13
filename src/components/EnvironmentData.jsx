@@ -1,21 +1,40 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// require("dotenv").config();
+import "../assets/environmentData.css";
 
 const EnvironmentData = () => {
-  // const API = `http://api.airvisual.com/v2/nearest_city?lat=43.653655&lon=3.882693&key=${process.env.AQI_API}`;
-  const API = `http://api.airvisual.com/v2/nearest_city?lat=43.653655&lon=3.882693&key=d1997f4d-a843-4bd1-ac3a-5517c96e3166`;
+  const [location, setLocation] = useState("Nantes");
   const [environment, setEnvironment] = useState([]);
-  useEffect(() => {
-    axios
-      .get(API)
-      .then((resp) => resp.data)
-      .then((resp) => {
-        console.warn(resp.data.city);
-        setEnvironment(resp);
-      });
-  }, []);
-  return <div></div>;
+
+  const displayAirquality = () => {
+    useEffect(() => {
+      const API = `https://api.waqi.info/feed/${location}/?token=830b0f5628f9c274bebec5286621dcb6e38dd0f0`;
+      console.warn(API);
+      const fetchData = async () => {
+        const response = await axios.get(API);
+        const data = await response.data.data;
+        setEnvironment(data);
+      };
+      fetchData();
+      console.warn(environment.aqi);
+    }, []);
+  };
+
+  displayAirquality();
+
+  return (
+    <>
+      <div className="airqualityDiv">
+        <div>
+          <h1>Indice de qualité de l'air</h1>
+          <div>
+            Dans la ville de {location}, l'indice de qualité de l'air était de{" "}
+            {environment.aqi} à
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default EnvironmentData;
