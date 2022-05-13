@@ -17,15 +17,21 @@ const LandingPage = () => {
       <div className="logo">
         <img src={logo} alt="logo" className="img-logo" />
       </div>
+      {/* <div className="About-us">
+        <h1> Qui sommes nous?</h1>
+          <p> Nous sommes Ali, Audren, Basile, Olivier et Stéphane, une équipe de 5 juniors développeurs </p>
+      </div> */}
       <div className="About">
         <h1> À propos</h1>
         <p>
           Ce site à été crée afin de sensibiliser la population à
           l'éco-responsabilité.
           <br />
+          <br />
           Ce site vous permettra d'en savoir un peu plus sur la qualité de l'air
           et de l'eau près de chez vous (où dans une zone que vous aurez choisi)
-          et ainsi agir en conséquence de manière éco-responsable.
+          et ainsi d'agir en conséquence de manière éco-responsable.
+          <br />
           <br />
           En créant votre compte vous pourrez facilement retrouver les endroits
           ciblés auparavant en les mettant en favoris.

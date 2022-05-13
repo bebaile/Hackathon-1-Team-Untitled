@@ -4,7 +4,7 @@
   background-color: #44c767;
   border-radius: 18px;
   border: 1px solid #18ab29;
-  display: inline-block;
+  display: flex;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
@@ -12,6 +12,7 @@
   padding: 7px 25px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
+  align-items: center;
 }
 .Sign-in:hover {
   background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
@@ -25,4 +26,21 @@
 .logo {
   display: flex;
   align-items: center;
+  width: 1rem;
+  height: 1rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    
 }
