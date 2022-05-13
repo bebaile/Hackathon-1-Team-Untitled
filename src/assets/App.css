@@ -1,12 +1,65 @@
+html {
+    background-color: #BFD200;
+
+}
+
+body {
+    background: url("./paris.jpg") center fixed no-repeat;
+}
+
 .container {
-    color: green;   
+    color: 422423C;
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 40px;
-};
+}
 
 .login-wrapper {
     font-size: 40px;
-};
- 
+}
+
+.input {
+    border-radius: 10px;
+    width: 20rem;
+    height: 1.5rem;
+}
+
+.submit_button {
+    border-radius: 10px;
+    width: 13rem;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.sb {
+    margin-top: 4rem;
+}
+
+.body_form {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+textarea {
+    border-radius: 5px;
+    width: 30rem;
+    height: 10rem;
+    margin-top: 1rem;
+    padding: 0.1rem 0.1rem;
+    line-height: 1.3rem;
+}
+
+input {
+    margin-top: 1rem;
+}
+
+/*.form_body {
+    padding-top: 1px;
+}*/
+label {
+    color: white;
+}
