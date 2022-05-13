@@ -1,0 +1,21 @@
+.mapContainer iframe{
+    width:90vw;
+    height:50vh;
+    margin:0px auto;
+    position:relative;
+    border-radius:10px;
+    border:2px solid #333;
+}
+
+.mapContainer{
+    width:100vw;
+    height:55vh;
+    margin:-10px; 
+    background:#222;
+    padding:5%;
+}
+
+#map{
+    width:600px !important;
+    height:600px !important;
+}
